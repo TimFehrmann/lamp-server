@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        },
+        "types": [
+            "node",
+            "jest"
+        ],
+        "typeRoots": ["./types", "./node_modules/@types"]
+    },
+    "include": ["./src/**/*.tsx", "./src/**/*.ts", "./test"],
+    "exclude": ["**/__mocks__/*", "./test"]
+}

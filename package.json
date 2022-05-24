@@ -1,0 +1,38 @@
+{
+  "name": "@timfehrmann/lamp-server",
+  "version": "0.1.0",
+  "description": "This package is being used by my home server to manage colored lighting of lamps.",
+  "author": "Tim Fehrmann",
+  "main": "lib/index.js",
+  "types": "lib",
+  "homepage": "https://github.com/TimFehrmann/lamp-server#readme",
+  "keywords": [
+  ],
+  "bugs": {
+    "url": "https://github.com/TimFehrmann/lamp-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimFehrmann/lamp-server"
+  },
+  "publishConfig": {
+    "@timfehrmann:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --coverage --coverageDirectory='coverage'"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.2",
+    "ts-node-dev": "^1.1.8",
+    "tslint": "^5.17.0"
+  }
+}
